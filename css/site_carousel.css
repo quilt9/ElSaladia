@@ -1,0 +1,296 @@
+/* SITE COLORS
+
+Light yellow	#f1f3d8
+Logo green		#719F40
+Dark green		#5F8536
+Light green		#B7C13A
+Red						#D4202B
+Pink					#E54B81
+Orange				#F9A600
+Black					#282828
+Grey					#282828
+
+-------------------------------------------------- */
+
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text and font family */
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background-color: #f1f3d8;
+  color: #282828;
+}
+
+/* Header */
+
+header {
+	background: url('../img/ElSaladia_logo_50H.png');
+	background-repeat: no-repeat;
+	height: 70px;
+	margin-top: 15px;
+}
+
+/* Reduce margin top on Header and logo size when screen size reduced */
+@media (max-width: 767px) {
+	header {
+	background: url('../img/ElSaladia_logo.png');
+	background-repeat: no-repeat;
+	height: 50px;
+	margin-top: 5px;
+	}
+}
+
+/* Prevent site title from showing up */
+header h1 {
+	text-indent: -9999px;
+	margin-top: 5px;
+}
+
+/* Change brand font-size, font-weight and color. Also add text shadow and letter-spacing*/
+.navbar a.brand {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #F9A600;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.25);
+	letter-spacing: 0.03em;
+}
+
+/* Reduce brand font-size when screen size reduced */
+@media (max-width: 767px) {
+.navbar a.brand {
+	font-size: 1.15em;
+	}
+}
+
+/* Headings */
+
+/* Font family, line-height, and letter-spacing */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Quando, cursive;
+	font-size: 1.5em;
+	letter-spacing: -0.07em;
+	line-height: 1.75em;
+}
+
+/* h1 h2 h3 color */
+h1, h2, h3 {
+	color: #5F8536;	
+	margin-top: 10px;
+}
+
+/* h4 h5 h6 color */
+h4, h5, h6 {
+	color: #F9A600;	
+	margin-top: 15px;
+}
+
+/* h4 font-size */
+h4 {
+	font-size: 1.25em;
+}
+
+/* h5 font-size and family */
+h5 {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	color: #F9A600;
+}
+
+/* Body font size and line-height 
+p {
+	font-size: 1em;
+}
+*/
+
+/* Border color */
+hr {
+	border-color: #B7C13A;
+}
+
+/* Address color */
+address {
+	margin-bottom: 10px;
+}
+
+a {
+	color: #B7C13A;
+}
+
+a:hover {
+	color: #5F8536;
+}
+
+/* Footer*/
+
+/* background-color, add margin-top*/ 
+#footer {
+	background-color: #ffffff;
+	margin-top: 30px;
+	padding-bottom: 10px;
+}
+
+/* Add space above h5 */
+#footer h5 {
+	padding-top: 10px;
+}
+
+/* Smaller footer p */
+#footer p {
+	font-size: .9em;
+	margin: 2px 0;
+}
+
+/* Change footer a and a hover color */
+#footer a {
+	color: #888888;
+}
+
+#footer a:hover {
+	background-color: #f1f3d8;
+	text-decoration: none;
+}
+
+/* More right margin for footer social icons */
+#footer #social ul li{
+	margin-right: 10px;
+}
+
+/* More space all around footer social icons */
+#footer #social ul li a{
+	padding: 5px;
+}
+
+/* Add padding on both sides when screen size reduced */
+@media (max-width: 767px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+}
+
+/* Change class muted */
+.muted {
+	color: #888888;
+}
+
+
+/* CUSTOMIZE NAV
+-------------------------------------------------- */
+
+
+/* CUSTOMIZE DROPDOWN-MENU
+-------------------------------------------------- */
+
+/* Change dropdown-menu sub-menu background color and text shadow */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	color: #ffffff;
+	background-color: #FCDD0D;
+	background-image: -moz-linear-gradient(top, #FCDD0D, #F9A600);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FCDD0D), to(#F9A600));
+  background-image: -webkit-linear-gradient(top, #FCDD0D, #F9A600);
+  background-image: -o-linear-gradient(top, #FCDD0D, #F9A600);
+  background-image: linear-gradient(to bottom, #FCDD0D, #F9A600);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFCDD0D', endColorstr='#ffF9A600', GradientType=0);
+  text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.5);
+}
+
+/* CUSTOMIZE CAROUSEL
+-------------------------------------------------- */
+
+/* Bottom padding */
+.carousel {
+	margin-bottom: 10px;
+}
+
+/* Carousel caption background color and text shadow */
+.carousel-caption {
+	background-color: rgba(95, 133, 54, 0.75);
+	text-shadow: 1px 1px 2px rgba(40, 40, 40, 1);
+	font-size: .9em;
+	letter-spacing: 0.05em;
+}
+
+/* CUSTOMIZE WEEK'S SPECIAL
+-------------------------------------------------- */
+
+/* Add padding, background image and rounded corners to Week's Special */
+#week-special {
+	padding: 0px;
+	background:url("../img/special_bkgd.jpg");
+}
+
+/* Change headings color to orange and add line-height and padding*/
+#week-special h2 {
+	color: #F9A600;
+	font-size: 2.25em;
+	line-height: 1.15em;
+	padding: 0px 15px;
+}
+
+#week-special h3 {
+	color: #B7C13A;
+	font-size: 1.75em;
+	line-height: 1em;
+	padding: 15px 15px 0;
+}
+
+#week-special p {
+	color: #f1f3d8;
+	font-size: 1.35em;
+	line-height: 1.45em;
+	padding: 0px 15px 5px;
+}
+
+
+#week-special .span4 {
+	padding: 15px 15px 15px 0;
+	float: right;
+}
+
+@media (max-width: 767px) {
+	#week-special .span4 {
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	}
+}
+
+/* CUSTOMIZE PHILOSOPHY IMAGES
+-------------------------------------------------- */
+
+/* Position the philosophy image to the right of the first column with a little breathing room on the right */
+.philosophy-image {
+	float: right;
+	margin-right: 25px;
+}
+
+/* Form
+-------------------------------------------------- */
+
+/* Make width 287px for input field */
+input[type="text"] {
+	width: 250px;
+	display: block;
+}
+
+/* Copyright
+-------------------------------------------------- */
+
+/* Change font size */
+#copyright p{
+	font-size: .8em;
+	color: #B7C13A;
+	text-align: center;
+}
+
+
+
+
+
